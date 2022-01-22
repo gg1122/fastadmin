@@ -262,7 +262,7 @@ return [
         //是否开启前台会员中心
         'usercenter'            => true,
         //会员注册验证码类型email/mobile/wechat/text/false
-        'user_register_captcha' => 'text',
+        'user_register_captcha' => 'email',
         //登录验证码
         'login_captcha'         => true,
         //登录失败超过10次则1天后重试
@@ -277,7 +277,9 @@ return [
         'multiplenav'           => false,
         //是否开启多选项卡(仅在开启多级菜单时起作用)
         'multipletab'           => true,
-        //后台皮肤,为空时表示使用skin-black-green
+        //是否默认展示子菜单
+        'show_submenu'          => false,
+        //后台皮肤,为空时表示使用skin-black-blue
         'adminskin'             => '',
         //后台是否启用面包屑
         'breadcrumb'            => false,
@@ -292,7 +294,7 @@ return [
         //允许跨域的域名,多个以,分隔
         'cors_request_domain'   => 'localhost,127.0.0.1',
         //版本号
-        'version'               => '1.2.2.20211011_beta',
+        'version'               => '1.3.3.20220121',
         //API接口地址
         'api_url'               => 'https://api.fastadmin.net',
     ],
